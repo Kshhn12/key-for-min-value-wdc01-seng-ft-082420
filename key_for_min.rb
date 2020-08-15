@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   smallest_Value = 0
-  object_for_smallest_value = ""
+  object_for_smallest_value = :nil
   name_hash.each do |object, value|
     if(object == nil || value == nil)
       smallest_Value = nil
@@ -13,5 +13,6 @@ def key_for_min_value(name_hash)
       object_for_smallest_value = object
     end
   end
-  return smallest_Value, object_for_smallest_value
+  smallest_Value
+  object_for_smallest_value
 end
