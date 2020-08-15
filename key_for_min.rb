@@ -7,8 +7,8 @@ def key_for_min_value(name_hash)
     if(object == nil || value == nil)
       smallest_Value = nil
     elsif(value < smallest_Value)
-      smallest_Value = value
+      smallest_Value = object
     end
   end
-  return smallest_Value
+  return object
 end
