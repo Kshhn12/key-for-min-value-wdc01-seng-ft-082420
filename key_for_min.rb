@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
     elsif(value < smallest_Value)
       smallest_Value = value
       object_for_smallest_value = object
-    elsif(name_hash.first)
+    elsif(object, key = name_hash.first)
       smallest_Value = value
       object_for_smallest_value = object
     end
